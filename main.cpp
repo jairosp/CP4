@@ -8,6 +8,7 @@ int main(){
 
 	cin >> TC;
 	while(TC--){
+		cin >> s;
 		currVal = 0;
 		score = 0;
 		for(int i = 0; i < s.size(); i++){

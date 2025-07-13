@@ -1,0 +1,43 @@
+# === C++ Build Artifacts ===
+*.exe
+*.out
+*.o
+*.obj
+*.a
+*.so
+*.dll
+
+# === VS Code settings ===
+.vscode/
+
+# === OS Generated Files ===
+.DS_Store        # macOS
+Thumbs.db        # Windows
+ehthumbs.db      # Windows
+desktop.ini      # Windows
+
+# === Logs & Dumps ===
+*.log
+*.dmp
+*.stackdump
+
+# === Backup / Temp Files ===
+*~
+*.swp
+*.tmp
+*.bak
+*.old
+
+# === CMake & Build Systems (if used) ===
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# === CLion or other JetBrains IDEs ===
+.idea/
+cmake-build-*/
+
+# === Others you might create ===
+a.exe
