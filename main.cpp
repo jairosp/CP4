@@ -1,28 +1,23 @@
-#include <iostream>
-#include <vector>
-#include <queue>
+#include <bits/stdc++.h>
 
 using namespace std;
 
-void bfs(int start, const vector<vector<int>> &adj, vector<bool> &visited)
-{
-	queue<int> q;
-	q.push(start);
-	visited[start] = true;
+int main(){
+	int TC, score, currVal;
+	string s;
 
-	while (!q.empty())
-	{
-		int node = q.front();
-		q.pop();
-		cout << node << " ";
-
-		for (int neighbor : adj[node])
-		{
-			if (!visited[neighbor])
-			{
-				q.push(neighbor);
-				visited[neighbor] = true;
+	cin >> TC;
+	while(TC--){
+		currVal = 0;
+		score = 0;
+		for(int i = 0; i < s.size(); i++){
+			if(s[i] == 'O'){
+				score += ++currVal;
+			}else{
+				currVal = 0;
 			}
 		}
+		cout << score << '\n';
 	}
+	return 0;
 }
